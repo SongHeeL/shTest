@@ -1,6 +1,6 @@
-public class floatingPoint {
+public class FloatingPoint {
     public static void main(String[] args) {
-        floatingPoint ftPoint = new floatingPoint();
+        FloatingPoint ftPoint = new FloatingPoint();
         ftPoint.additive();
     }
     public void additive(){
