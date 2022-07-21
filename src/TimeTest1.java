@@ -17,6 +17,6 @@ public class TimeTest1 {
         }
 
         long end = System.currentTimeMillis();
-        System.out.println("실행시간 : " + (end - start)/1000.0); // 실행시간 : 1.136
+        System.out.println("실행시간 : " + (end - start)/1000.0); // 실행시간 : 0.909
     }
 }
