@@ -29,6 +29,6 @@ public class MapTest {
        HashMap<String, String> map = new HashMap<>();
 
        map.put(mapT1.phone,mapT1.name);
-       System.out.println(map);
+       System.out.println(map); // {010-1234-5678=홍길동}
     }
 }
