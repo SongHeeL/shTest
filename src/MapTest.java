@@ -2,33 +2,21 @@ import java.util.HashMap;
 
 public class MapTest {
     String phone;
-    String name;
     public MapTest(){
     }
-    public MapTest(String phone, String name){
+    public MapTest(String phone){
         this.phone = phone;
-        this.name = name;
     }
-
-    public String getPhone(){
-        return phone;
-    }
-
-    public String getName(){
-        return name;
-    }
-
     public static void main(String[] args) {
         MapTest mapT = new MapTest();
         mapT.testMap1();
     }
     public void testMap1(){
-       MapTest mapT1 = new MapTest();
-       mapT1.phone = "010-1234-5678";
-       mapT1.name = "홍길동";
-       HashMap<String, String> map = new HashMap<>();
+       MapTest mapT1 = new MapTest("010-1234-1234");
 
-       map.put(mapT1.phone,mapT1.name);
-       System.out.println(map); // {010-1234-5678=홍길동}
+       HashMap<MapTest, String> map = new HashMap<>();
+
+       map.put(mapT1,"홍길동");
+       System.out.println(map); // {MapTest@1b6d3586=홍길동}
     }
 }
