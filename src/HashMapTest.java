@@ -19,10 +19,10 @@ public class HashMapTest {
 
         Map<HashMapTest, Integer> map = new HashMap<>();
 
-        map.put(new HashMapTest("후라이드치킨", 18000), 10);
+        map.put(new HashMapTest("후라이드치킨", 16000), 10);
         map.put(new HashMapTest("생맥주", 4500), 4);
 
-        Integer friedCount = map.get(new HashMapTest("후라이드치킨", 18000));
+        Integer friedCount = map.get(new HashMapTest("후라이드치킨", 16000));
         System.out.println(friedCount); // null => 10이 아닌 null이 나오는 이유는 해시맵에 값을 넣을 때 사용된 해시값과 조회할 때 사용되는 해시값이 다르기 때문이다.
     }
 }
