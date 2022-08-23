@@ -6,7 +6,7 @@ public class EnumTest {
     }
 
     public static void main(String[] args) {
-        System.out.println(FourSeasons.Autumn);
+        System.out.println("가을 = " + FourSeasons.Autumn); // 가을 = Autumn
     }
 }
 
