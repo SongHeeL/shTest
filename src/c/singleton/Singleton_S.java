@@ -12,8 +12,14 @@ public class Singleton_S {
             throw new RuntimeException("Exception occured in creating singleton instance");
         }
     }
-
     public static Singleton_S getInstance() {
         return singleton_s;
+    }
+    public static void main(String [] args) {
+        Singleton_S singleton1 = Singleton_S.getInstance();
+        Singleton_S singleton2 = Singleton_S.getInstance();
+
+        System.out.println("singleton1 : " + singleton1); // singleton1 : c.singleton.Singleton_S@1b6d3586
+        System.out.println("singleton2 : " + singleton2); // singleton2 : c.singleton.Singleton_S@1b6d3586
     }
 }

@@ -13,4 +13,11 @@ public class Singleton_T {
         }
         return singleton;
     }
+    public static void main(String [] args) {
+        Singleton_T singleton1 = Singleton_T.getInstance();
+        Singleton_T singleton2 = Singleton_T.getInstance();
+
+        System.out.println("singleton1 : " + singleton1); // singleton1 : c.singleton.Singleton_T@1b6d3586
+        System.out.println("singleton2 : " + singleton2); // singleton2 : c.singleton.Singleton_T@1b6d3586
+    }
 }
