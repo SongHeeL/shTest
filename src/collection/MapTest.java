@@ -1,5 +1,6 @@
-import java.util.HashMap;
+package collection;
 
+import java.util.HashMap;
 public class MapTest {
     String phone;
     public MapTest(){
@@ -12,11 +13,11 @@ public class MapTest {
         mapT.testMap1();
     }
     public void testMap1(){
-       MapTest mapT1 = new MapTest("010-1234-1234");
+        MapTest mapT1 = new MapTest("010-1234-1234");
 
-       HashMap<MapTest, String> map = new HashMap<>();
+        HashMap<MapTest, String> map = new HashMap<>();
 
-       map.put(mapT1,"홍길동");
-       System.out.println(map); // {MapTest@1b6d3586=홍길동}
+        map.put(mapT1,"홍길동");
+        System.out.println(map); // {MapTest@1b6d3586=홍길동}
     }
 }
